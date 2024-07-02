@@ -1,10 +1,9 @@
-import {useContext} from 'react';
-import {dataContext} from '../App';
 import Header from './header/header';
 import Intro from './intro/intro';
 import AboutMe from './aboutMe/aboutMe';
 import Skill from './skill/skill';
 import Project from './project/project';
+import Webclone from './webclone/webclone';
 
 function Site(){
 
@@ -15,6 +14,7 @@ function Site(){
             <AboutMe />
             <Skill />
             <Project />
+            <Webclone />
         </>
     )
 }

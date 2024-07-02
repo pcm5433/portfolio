@@ -36,6 +36,12 @@ function header(){
         window.scrollTo({top: location - menuHeight, behavior: "smooth"})
     }
 
+    function webClone(){
+        const menuHeight = header.current.offsetHeight;
+        const location = document.querySelector(".web_sec").offsetTop;
+        window.scrollTo({top: location - menuHeight, behavior: "smooth"})
+    }
+
     return(
         <>
         <header ref={header} className='w100'>
@@ -46,7 +52,7 @@ function header(){
                     <li onClick={introduce}>소개</li>
                     <li onClick={skill}>스킬</li>
                     <li onClick={project}>프로젝트</li>
-                    <li>웹 클로닝</li>
+                    <li onClick={webClone}>웹 클로닝</li>
                     <li>연락처</li>
                 </ul>
             </nav>

@@ -19,22 +19,20 @@
   color: var(--color-black);
   letter-spacing: -1px;
   box-sizing: border-box;
+  font-family: 'Pretendard Variable', 'sans-serif';
 }
 
 body{
-  background: linear-gradient(to top, #bac9d4, #e5ecf3);
+  background: linear-gradient(to top, #f6f8f8, #f0f4f5);
 }
 
 a{
   text-decoration: none;
+  font-family: 'Pretendard Variable', 'sans-serif';
 }
 
 ul, li{
   list-style: none;
-}
-
-.App {
-  font-family: 'Pretendard Variable', 'sans-serif';
 }
 
 .w100{
@@ -57,6 +55,6 @@ ul, li{
 }
 
 ::selection{
-  color: #f7f7f7;
-  background: var(--color-main);
+  color: var(--color-dark-black);
+  background: #bbc2cd;
 }
