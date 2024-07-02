@@ -1,0 +1,27 @@
+header{
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header.scrolled{
+    background-color: #E9ECF0;
+    box-shadow: 0 2px 4px #ccc;
+}
+
+.head_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_menu>ul{
+    display: flex;
+    gap: 60px;
+    font-weight: 600;
+}
+.top_menu li{
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@font-face {
+  font-family: 'ROEHOE-CHAN';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/ROEHOE-CHAN.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --color-dark-black: #212121;
+  --color-black: #323635;
+  --color-main: #00A2C6;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: var(--color-black);
+  letter-spacing: -1px;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to top, #bac9d4, #e5ecf3);
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, li{
+  list-style: none;
+}
+
+.App {
+  font-family: 'Pretendard Variable', 'sans-serif';
+}
+
+.w100{
+  width: 100%;
+}
+
+.w1440{
+  width: 1700px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-black); /* 스크롤바 막대 색상 */
+  border-radius: 12px 12px 12px 12px;
+}
+
+::selection{
+  color: #f7f7f7;
+  background: var(--color-main);
+}
