@@ -1,5 +1,5 @@
-import {createContext, useReducer} from 'react';
-import {Route, Routes, Link} from 'react-router-dom';
+import {createContext} from 'react';
+import {Route, Routes} from 'react-router-dom';
 import {Contents} from './data';
 import Site from './components/site';
 import "./App.css";

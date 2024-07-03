@@ -1,0 +1,8 @@
+.contact_sec{
+    overflow: hidden;
+    /* padding: 40px 0; */
+}
+.contact_wrap>img{
+    width: 800px;
+    /* transform: rotate(-30deg); */
+}

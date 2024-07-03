@@ -1,10 +1,8 @@
-// import {useGSAP} from '@gsap/react';
-// import {ScrollTrigger} from 'gsap/ScrollTrigger';
-// import gsap from 'gsap';
 import {useState} from 'react';
-import domino_monitor from '../../assets/domino_monitor.png'
-import bizcar_monitor from '../../assets/bizcar_monitor.png'
-import ktg_monitor from '../../assets/ktg_monitor.png'
+import domino_monitor from '../../assets/domino_monitor.png';
+import bizcar_monitor from '../../assets/bizcar_monitor.png';
+import ktg_monitor from '../../assets/ktg_monitor.png';
+import gongju_monitor from '../../assets/gongju_monitor.png';
 import './webclone.css';
 
 function Webclone(){
@@ -16,20 +14,84 @@ function Webclone(){
     return(
         <section className="w100 web_sec wrapper">
             <h2 className='main_tit_l'>웹 클로닝</h2>
-            <div className="slide_container">
-                <ul className="slide_wrapper" onMouseEnter={onStop} onMouseLeave={onRun}>
+            <article className="slide_container">
+                <div className="slide_wrapper" onMouseEnter={onStop} onMouseLeave={onRun}>
                     <div className={"slide original" + (animate ? "" : " stop")}>
-                        <li><p className='item'><img src={domino_monitor} alt="도미노 바로가기" /></p></li>
-                        <li><p className='item'><img src={bizcar_monitor} alt="비즈카 바로가기" /></p></li>
-                        <li><p className='item'><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></p></li>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="https://pcm5433.github.io/domino/" target="_blank"><img src={domino_monitor} alt="도미노 바로가기" /></a>
+                            </p>
+                            <h4>도미노</h4>
+                            <span>HTML / CSS / JS</span>
+                        </div>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="https://pcm5433.github.io/bizcar/" target="_blank"><img src={bizcar_monitor} alt="비즈카 바로가기" /></a>
+                            </p>
+                            <h4>롯데렌터카 비즈카</h4>
+                            <span>HTML / CSS / JS</span>
+                        </div>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="https://pcm5433.github.io/ktg/" target="_blank"><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></a>
+                            </p>
+                            <h4>KT&G 장학재단</h4>
+                            <span>HTML / CSS</span>
+                        </div>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="https://pcm5433.github.io/gongju-museum/" target="_blank"><img src={gongju_monitor} alt="공주 박물관 바로가기" /></a>
+                            </p>
+                            <h4>공주박물관</h4>
+                            <span>HTML / CSS / JS</span>
+                        </div>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="" target="_blank"><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></a>
+                            </p>
+                            <h4>쏘카</h4>
+                            <span>사용한 언어</span>
+                        </div>
                     </div>
                     <div className={"slide clone" + (animate ? "" : " stop")}>
-                        <li><p className='item'><img src={domino_monitor} alt="도미노 바로가기" /></p></li>
-                        <li><p className='item'><img src={bizcar_monitor} alt="비즈카 바로가기" /></p></li>
-                        <li><p className='item'><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></p></li>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="https://pcm5433.github.io/domino/" target="_blank"><img src={domino_monitor} alt="도미노 바로가기" /></a>
+                            </p>
+                            <h4>도미노</h4>
+                            <span>HTML / CSS / JS</span>
+                        </div>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="https://pcm5433.github.io/bizcar/" target="_blank"><img src={bizcar_monitor} alt="비즈카 바로가기" /></a>
+                            </p>
+                            <h4>롯데렌터카 비즈카</h4>
+                            <span>HTML / CSS / JS</span>
+                        </div>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="https://pcm5433.github.io/ktg/" target="_blank"><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></a>
+                            </p>
+                            <h4>KT&G 장학재단</h4>
+                            <span>HTML / CSS</span>
+                        </div>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="https://pcm5433.github.io/gongju-museum/" target="_blank"><img src={gongju_monitor} alt="공주 박물관 바로가기" /></a>
+                            </p>
+                            <h4>공주박물관</h4>
+                            <span>HTML / CSS / JS</span>
+                        </div>
+                        <div className='monitor_wrap'>
+                            <p className='item'>
+                                <a href="" target="_blank"><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></a>
+                            </p>
+                            <h4>쏘카</h4>
+                            <span>사용한 언어</span>
+                        </div>
                     </div>
-                </ul>
-            </div>
+                </div>
+            </article>
         </section>
     )
 }

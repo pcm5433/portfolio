@@ -1,26 +1,21 @@
-import {useRef} from 'react';
-import close from '../../assets/cross.png'
-import './project.css'
+import {useState, useRef} from 'react';
+import close from '../../assets/cross.png';
+import './project.css';
 
 function ProjectList({id, cls, img, title, tag, date, content, page, git, full_img}){
 
     // 팝업창
-    const popUp = useRef();
-
-    function popUpOn(){
-        popUp.current.classList.add("on")
-    }
-
-    function popUpOff(){
-        popUp.current.classList.remove("on")
-    }
-
-    // 팝업 탑버튼
     const top = useRef();
 
-    function popUpTop(){
-        const location = top.current.offsetTop;
-        window.scrollTo({top: location, behavior: "smooth"});
+    const [popUpOn, setPopUpOn] = useState(false);
+
+    function onClickPopUp(){
+        setPopUpOn(true)
+        window.scrollTo({top: top.current.offsetTop, behavior: "smooth"})
+    }
+
+    function onClickPopUpOff(){
+        setPopUpOn(false)
     }
 
     return(
@@ -33,12 +28,12 @@ function ProjectList({id, cls, img, title, tag, date, content, page, git, full_i
                 <img src={img} alt={`${title}`} className='pjtPhoto pjtPhoto-ellipse' />
                 <div className='pjtTit'>
                     <h4>{title}</h4>
-                    <button onClick={popUpOn} className='quick_btn'>VIEW MORE <span></span></button>
+                    <button onClick={onClickPopUp} className='quick_btn'>VIEW MORE <span></span></button>
                 </div>
-                <div ref={popUp} className='pjtPopUp'>
+                <div className={"pjtPopUp" + (popUpOn ? " on" : " ")}>
                     <div className='popUp_top'>
                         <h4>{title}</h4>
-                        <button onClick={popUpOff}><img src={close} alt="close_icon" /></button>
+                        <button onClick={onClickPopUpOff}><img src={close} alt="close_icon" /></button>
                     </div>
                     <div className='popUp_middle'>
                         <a href={page} target="_blank">
@@ -48,8 +43,9 @@ function ProjectList({id, cls, img, title, tag, date, content, page, git, full_i
                             <button className='quick_btn'>Github <span></span></button>
                         </a>
                     </div>
-                    <img src={full_img} alt={`${title} 사이트 전체 이미지`} />
-                    <button onClick={popUpTop} className='top_btn'>TOP</button>
+                    <div className='popUp_img'>
+                        <img src={full_img} alt={`${title} 사이트 전체 이미지`} />
+                    </div>
                 </div>
                 <div className='pjtTag'>
                     <h6>{tag}</h6>
