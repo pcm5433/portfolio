@@ -1,5 +1,6 @@
 import {useState, useRef} from 'react';
 import up from '../assets/up.png';
+
 import Header from './header/header';
 import Intro from './intro/intro';
 import AboutMe from './aboutMe/aboutMe';
@@ -7,6 +8,8 @@ import Skill from './skill/skill';
 import Project from './project/project';
 import Webclone from './webclone/webclone';
 import Contact from './contact/contact';
+import Footer from './footer/footer';
+
 import '../index.css';
 
 function Site(){
@@ -34,15 +37,18 @@ function Site(){
     return(
         <>
             <Header menuRef={menuRef} />
-            <Intro />
-            <AboutMe ref={menuRef} />
-            <Skill ref={menuRef} />
-            <Project ref={menuRef} />
-            <Webclone ref={menuRef} />
-            <Contact ref={menuRef} />
-            <button ref={topBtn} onClick={top} className={"top_btn" + (topOn ? " on" : " ")}>
-                <img src={up} alt="top_button" />
-            </button>
+            <main>
+                <Intro />
+                <AboutMe ref={menuRef} />
+                <Skill ref={menuRef} />
+                <Project ref={menuRef} />
+                <Webclone ref={menuRef} />
+                <Contact ref={menuRef} />
+                <button ref={topBtn} onClick={top} className={"top_btn" + (topOn ? " on" : " ")}>
+                    <img src={up} alt="top_button" />
+                </button>
+            </main>
+            <Footer />
         </>
     )
 }

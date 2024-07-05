@@ -89,7 +89,9 @@
     position: relative;
 }
 .about_txt_r2>img:first-child{
-    opacity: 0.2;
+    width: 530px;
+    height: 640px;
+    opacity: 0.4;
 }
 .about_txt_r2>p{
     font-size: 15px;

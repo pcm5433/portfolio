@@ -1,15 +1,31 @@
 .skill_sec{
     padding: 40px 0;
 }
+.skill_wrap{
+    padding: 40px;
+}
 .skill_list{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 150px;
     flex-wrap: wrap;
-    gap: 48px;
-    overflow: hidden;
+    flex-direction: column;
 }
-.loader{
-    height: 170px;
-    width: 170px;
+.skill_list:first-child{
+    margin-left: 130px;
+    margin-bottom: 120px;
+}
+.skill_list:last-child{
+    margin-left: 290px;
+}
+.CircularProgressbar .CircularProgressbar-path{
+    stroke: #00A2C6;
+}
+.skill_txt_wrap{
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: -70px;
+}
+.skill_txt{
+    font-weight: 500;
 }

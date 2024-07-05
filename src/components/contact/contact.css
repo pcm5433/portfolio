@@ -16,7 +16,7 @@
 
 /* 이름 */
 .name_cont{
-    top: 150px;
+    top: 50px;
     left: 120px;
 }
 .name_text{
@@ -38,7 +38,7 @@
 
 /* 연락처 */
 .contact_cont{
-    top: 50px;
+    top: -30px;
     right: 100px;
 }
 .contact_cont>div{

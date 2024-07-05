@@ -1,5 +1,5 @@
 import {forwardRef} from 'react'
-import Me from '../../assets/me.png'
+import Me from '../../assets/my_photo.jpg'
 import Sign from '../../assets/sign.png'
 import './aboutMe.css'
 
@@ -8,7 +8,7 @@ const AboutMe = forwardRef((props, ref)=>{
     return(
         <section ref={aboutRef => (ref.current[0] = aboutRef)} className='w100 about_sec'>
             <h2 className='main_tit'>소개</h2>
-            <article className='w1440 about_wrap'>
+            <article className='w1700 about_wrap'>
                 <div className='about_txt_l'>
                     <div className='about_txt_l1'>
                         <h3 className='text'>Park<br />　　Chaemin</h3>
@@ -17,23 +17,23 @@ const AboutMe = forwardRef((props, ref)=>{
                     <div className='about_txt_l2'>
                         <h5>2002. 02. 10
                             <br />포기하지 않고 도전해,
-                            <br />끝내 해결방안을 찾아내는 개발자입니다.
+                            <br />끝까지 해결방안을 찾아내는 개발자입니다.
                         </h5>
                         <div>
                             <p>2024년 1월 23일부터 8월 9일까지
                                 <br />프론트엔드 개발자가 되기 위해 공부했습니다.
                             </p>
-                            <h6>프론트엔드 개발자 과정을 발견한 계기와 왜 프론트엔드 개발자가 되고 싶은지를
-                                <br />간단하게 설명하는 공간. 여기 진짜 뭐라고 하지 곤란하네.
+                            <h6>자신의 손으로 하나하나 코드를 완성해나가는 것과,
+                                <br />그 과정에서 이루어지는 사람들과의 소통이 즐거워 개발자를 지망하게 되었습니다.
                             </h6>
                         </div>
                     </div>
                 </div>
                 <div className='about_txt_r'>
                     <div className='about_txt_r1'>
-                        <p>저는 이런 성격을 가진 이러이러한 사람입니다.
-                            <br />어쩌고저쩌고 대충 이런 내용의 설명이 여기에 들어가게 될 텐데 또 뭘 넣으면 좋지.
-                            <br />지금은 전혀 모르겠네요? 어떻게 쓰면 좋을까요?
+                        <p>제가 맡은 일에 대해 끈기를 가진 사람입니다.
+                            <br />문제가 발생하면 포기하는 것이 아니라, 그 문제를 해결하기 위해 노력합니다.
+                            <br />학원에서 프로젝트를 진행하는 동안 어려움이 많았으나, 검색과 영상, 질문을 통해 스스로 해냈습니다.
                         </p>
                     </div>
                     <div className='about_txt_r2'>

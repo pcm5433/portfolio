@@ -19,7 +19,7 @@ function ProjectList({id, cls, img, title, tag, date, content, page, git, full_i
     }
 
     return(
-        <article ref={top} className='w1440 pjt_wrap'>
+        <article ref={top} className='w1700 pjt_wrap'>
             <div className='pjtClass'>
                 <h3>{id}</h3>
                 <p>{cls}</p>

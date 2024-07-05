@@ -1,6 +1,5 @@
 import {forwardRef} from "react";
 import SkillList from "./skillList";
-import html from "../../assets/html.png";
 import './skill.css';
 
 const Skill = forwardRef((props, ref)=>{

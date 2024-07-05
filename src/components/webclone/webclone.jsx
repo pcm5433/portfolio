@@ -50,7 +50,7 @@ const Webclone = forwardRef((props, ref)=>{
                                 <a href="" target="_blank"><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></a>
                             </p>
                             <h4>쏘카</h4>
-                            <span>사용한 언어</span>
+                            <span>HTML / CSS</span>
                         </div>
                     </div>
                     <div className={"slide clone" + (animate ? "" : " stop")}>
@@ -87,7 +87,7 @@ const Webclone = forwardRef((props, ref)=>{
                                 <a href="" target="_blank"><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></a>
                             </p>
                             <h4>쏘카</h4>
-                            <span>사용한 언어</span>
+                            <span>HTML / CSS</span>
                         </div>
                     </div>
                 </div>

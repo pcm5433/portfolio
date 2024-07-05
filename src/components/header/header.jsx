@@ -51,7 +51,7 @@ function header({menuRef}){
     return(
         <>
         <header ref={header} className={"w100" +(scrolled ? " scrolled" : " ")}>
-            <div className='w1440 head_wrap'>
+            <div className='w1700 head_wrap'>
             <h1><a href="#"><img src={logo} alt="logo" /></a></h1>
             <nav className='top_menu'>
                 <ul>
