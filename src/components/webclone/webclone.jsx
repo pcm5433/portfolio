@@ -1,18 +1,18 @@
-import {useState} from 'react';
+import {useState, forwardRef} from 'react';
 import domino_monitor from '../../assets/domino_monitor.png';
 import bizcar_monitor from '../../assets/bizcar_monitor.png';
 import ktg_monitor from '../../assets/ktg_monitor.png';
 import gongju_monitor from '../../assets/gongju_monitor.png';
 import './webclone.css';
 
-function Webclone(){
+const Webclone = forwardRef((props, ref)=>{
 
     const [animate, setAnimate] = useState(true);
     const onStop = () => setAnimate(false);
     const onRun = () => setAnimate(true);
 
     return(
-        <section className="w100 web_sec wrapper">
+        <section ref={webRef => (ref.current[3] = webRef)} className="w100 web_sec wrapper">
             <h2 className='main_tit_l'>웹 클로닝</h2>
             <article className="slide_container">
                 <div className="slide_wrapper" onMouseEnter={onStop} onMouseLeave={onRun}>
@@ -94,6 +94,6 @@ function Webclone(){
             </article>
         </section>
     )
-}
+})
 
 export default Webclone;

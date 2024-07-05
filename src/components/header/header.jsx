@@ -1,9 +1,8 @@
 import {useState, useRef} from 'react';
-import {Link} from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import './header.css'
 
-function header(){
+function header({menuRef}){
 
     const header = useRef();
 
@@ -11,7 +10,6 @@ function header(){
 
     // 스크롤 시 헤더 배경색 변경
     window.addEventListener("scroll", function(){
-        console.log(window.scrollY)
         if(window.scrollY>500){
             setScrolled(true);
         }else{
@@ -22,31 +20,31 @@ function header(){
     // 메뉴 클릭 시 스크롤 이동
     function introduce(){
         const menuHeight = header.current.offsetHeight;
-        const location = document.querySelector(".about_sec").offsetTop;
+        const location = menuRef.current[0].offsetTop;
         window.scrollTo({top: location - menuHeight, behavior: "smooth"})
     }
 
     function skill(){
         const menuHeight = header.current.offsetHeight;
-        const location = document.querySelector(".skill_sec").offsetTop;
+        const location = menuRef.current[1].offsetTop;
         window.scrollTo({top: location - menuHeight, behavior: "smooth"})
     }
 
     function project(){
         const menuHeight = header.current.offsetHeight;
-        const location = document.querySelector(".pjt_sec").offsetTop;
+        const location = menuRef.current[2].offsetTop;
         window.scrollTo({top: location - menuHeight, behavior: "smooth"})
     }
 
     function webClone(){
         const menuHeight = header.current.offsetHeight;
-        const location = document.querySelector(".web_sec").offsetTop;
+        const location = menuRef.current[3].offsetTop;
         window.scrollTo({top: location - menuHeight, behavior: "smooth"})
     }
 
     function contact(){
         const menuHeight = header.current.offsetHeight;
-        const location = document.querySelector(".contact_sec").offsetTop;
+        const location = menuRef.current[4].offsetTop;
         window.scrollTo({top: location - menuHeight, behavior: "smooth"})
     }
 
@@ -54,7 +52,7 @@ function header(){
         <>
         <header ref={header} className={"w100" +(scrolled ? " scrolled" : " ")}>
             <div className='w1440 head_wrap'>
-            <h1><Link to={"/"}><img src={logo} alt="logo" /></Link></h1>
+            <h1><a href="#"><img src={logo} alt="logo" /></a></h1>
             <nav className='top_menu'>
                 <ul>
                     <li onClick={introduce}>소개</li>

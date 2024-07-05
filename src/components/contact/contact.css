@@ -1,8 +1,61 @@
 .contact_sec{
     overflow: hidden;
-    /* padding: 40px 0; */
+    position: relative;
 }
-.contact_wrap>img{
-    width: 800px;
-    /* transform: rotate(-30deg); */
+.airplane_move{
+    display: flex;
+    justify-content: center;
+}
+.airplane_move>img{
+    width: 700px;
+}
+.paper_wrap>div{
+    position: absolute;
+}
+
+
+/* 이름 */
+.name_cont{
+    top: 150px;
+    left: 120px;
+}
+.name_text{
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+.name_text>h3{
+    font-family: 'Cafe24Shiningstar';
+    font-size: 64px;
+    font-weight: 400;
+}
+.name_text>p{
+    font-family: 'Cafe24Shiningstar';
+    font-size: 20px;
+}
+
+
+/* 연락처 */
+.contact_cont{
+    top: 50px;
+    right: 100px;
+}
+.contact_cont>div{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+.contact_list{
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.contact_list>img{
+    width: 80px;
+    opacity: 0.6;
+}
+.contact_list>div{
+    font-size: 20px;
 }

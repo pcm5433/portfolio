@@ -7,6 +7,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Cafe24Shiningstar';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root{
   --color-dark-black: #212121;
   --color-black: #323635;

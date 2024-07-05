@@ -1,3 +1,15 @@
 .skill_sec{
     padding: 40px 0;
 }
+.skill_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+    overflow: hidden;
+}
+.loader{
+    height: 170px;
+    width: 170px;
+}

@@ -11,6 +11,8 @@ import '../index.css';
 
 function Site(){
 
+    const menuRef = useRef([]);
+
     // top 버튼
     const topBtn = useRef();
 
@@ -31,13 +33,13 @@ function Site(){
 
     return(
         <>
-            <Header />
+            <Header menuRef={menuRef} />
             <Intro />
-            <AboutMe />
-            <Skill />
-            <Project />
-            <Webclone />
-            <Contact />
+            <AboutMe ref={menuRef} />
+            <Skill ref={menuRef} />
+            <Project ref={menuRef} />
+            <Webclone ref={menuRef} />
+            <Contact ref={menuRef} />
             <button ref={topBtn} onClick={top} className={"top_btn" + (topOn ? " on" : " ")}>
                 <img src={up} alt="top_button" />
             </button>

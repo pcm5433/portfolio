@@ -1,11 +1,12 @@
+import {forwardRef} from 'react'
 import Me from '../../assets/me.png'
 import Sign from '../../assets/sign.png'
 import './aboutMe.css'
 
-function AboutMe(){
+const AboutMe = forwardRef((props, ref)=>{
 
     return(
-        <section className='w100 about_sec'>
+        <section ref={aboutRef => (ref.current[0] = aboutRef)} className='w100 about_sec'>
             <h2 className='main_tit'>소개</h2>
             <article className='w1440 about_wrap'>
                 <div className='about_txt_l'>
@@ -47,6 +48,6 @@ function AboutMe(){
             </article>
         </section>
     )
-}
+})
 
 export default AboutMe;
