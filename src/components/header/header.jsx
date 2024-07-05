@@ -52,16 +52,16 @@ function header({menuRef}){
         <>
         <header ref={header} className={"w100" +(scrolled ? " scrolled" : " ")}>
             <div className='w1700 head_wrap'>
-            <h1><a href="#"><img src={logo} alt="logo" /></a></h1>
-            <nav className='top_menu'>
-                <ul>
-                    <li onClick={introduce}>소개</li>
-                    <li onClick={skill}>스킬</li>
-                    <li onClick={project}>프로젝트</li>
-                    <li onClick={webClone}>웹 클로닝</li>
-                    <li onClick={contact}>연락처</li>
-                </ul>
-            </nav>
+                <h1><a href="#"><img src={logo} alt="logo" /></a></h1>
+                <nav className='top_menu'>
+                    <ul>
+                        <li onClick={introduce}>소개</li>
+                        <li onClick={skill}>스킬</li>
+                        <li onClick={project}>프로젝트</li>
+                        <li onClick={webClone}>웹 클로닝</li>
+                        <li onClick={contact}>연락처</li>
+                    </ul>
+                </nav>
             </div>
         </header>
         </>

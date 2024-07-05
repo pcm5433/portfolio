@@ -18,9 +18,9 @@ const Contents = {
         tag: "TODOLIST",
         date: "2024.00.00 ~ 2024.00.00",
         content: "개인 프로젝트인 프론트엔드 사전을 제작하기 전, 투두리스트에 뭐 썼지...",
-        page: "",
-        git: "",
-        full_img: ""
+        page: "https://pcm5433.github.io/todolist/",
+        git: "https://github.com/pcm5433/todolist.git",
+        full_img: "/src/assets/todolist.png"
     }, {
         id: "03",
         cls: "personal",

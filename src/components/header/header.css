@@ -26,3 +26,9 @@ header.scrolled{
 .top_menu li{
     cursor: pointer;
 }
+
+@media screen and (max-width: 1699px){
+    header>.head_wrap{
+        width: 100%;
+    }
+}
