@@ -17,8 +17,8 @@ const Contents = {
         tag: "HOMEPAGE",
         date: "2024.03.26 ~ 2024.04.09",
         content: "기존 지코바 홈페이지를 리뉴얼 작업한 프로젝트입니다.\nNode.js와 Express, MySQL을 통한 데이터베이스 저장 및 불러오기 등의 기술을 이용해 제작하였습니다.",
-        page: "",
-        git: "",
+        page: "https://pcm5433.github.io/gicova/",
+        git: "https://github.com/pcm5433/gicova.git",
         full_img: gicova_full
     }, {
         id: "02",
