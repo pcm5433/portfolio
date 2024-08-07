@@ -44,7 +44,7 @@ function ProjectList({id, cls, img, title, tag, date, content, page, git, full_i
                         </a>
                     </div>
                     <div className='popUp_img'>
-                        <img src={full_img} alt={`${title} 사이트 전체 이미지`} />
+                        <img src={full_img} alt={`사이트 전체 이미지`} />
                     </div>
                 </div>
                 <div className='pjtTag'>
