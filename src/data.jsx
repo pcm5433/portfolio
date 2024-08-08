@@ -51,7 +51,7 @@ const Contents = {
         date: "2024.05.16 ~ 2024.06.18",
         content: "'경복궁 별빛야행'을 중심으로 그 외 다양한 행사를 알리는 축제 홈페이지입니다.\nReact를 사용해 제작하였으며, '알려드립니다' 메뉴의 공지사항 게시판(작성/수정/삭제), '마이 페이지' 메뉴의 회원 정보 표시를 담당하였습니다.",
         page: "https://thesandfox.github.io/bandifesta",
-        git: "https://github.com/TheSandfox/bandifesta.git",
+        git: "https://github.com/pcm5433/bandifesta_Chaemin.git",
         full_img: g_full
     }, {
         id: "05",
