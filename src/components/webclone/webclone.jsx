@@ -3,6 +3,7 @@ import domino_monitor from '../../assets/domino_monitor.png';
 import bizcar_monitor from '../../assets/bizcar_monitor.png';
 import ktg_monitor from '../../assets/ktg_monitor.png';
 import gongju_monitor from '../../assets/gongju_monitor.png';
+import car_monitor from '../../assets/car_monitor.png';
 import './webclone.css';
 
 const Webclone = forwardRef((props, ref)=>{
@@ -47,7 +48,7 @@ const Webclone = forwardRef((props, ref)=>{
                         </div>
                         <div className='monitor_wrap'>
                             <p className='item'>
-                                <a href="" target="_blank"><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></a>
+                                <a href="" target="_blank"><img src={car_monitor} alt="쏘카 바로가기" /></a>
                             </p>
                             <h4>쏘카</h4>
                             <span>HTML / CSS</span>
@@ -84,7 +85,7 @@ const Webclone = forwardRef((props, ref)=>{
                         </div>
                         <div className='monitor_wrap'>
                             <p className='item'>
-                                <a href="" target="_blank"><img src={ktg_monitor} alt="ktg 장학재단 바로가기" /></a>
+                                <a href="" target="_blank"><img src={car_monitor} alt="쏘카 바로가기" /></a>
                             </p>
                             <h4>쏘카</h4>
                             <span>HTML / CSS</span>
